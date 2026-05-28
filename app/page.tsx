@@ -140,7 +140,7 @@ export default function Home() {
       </nav>
 {/* HERO */}
 
-<section className="relative min-h-screen overflow-x-hidden flex items-center px-6 md:px-20 pt-28 md:pt-0">
+<section className="relative min-h-screen overflow-x-hidden flex items-center px-6 md:px-20 pt-28 md:pt-16">
 
   {/* BACKGROUND GLOW */}
 
