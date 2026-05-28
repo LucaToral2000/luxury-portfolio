@@ -48,7 +48,7 @@ export default function Home() {
   
   }
   return (
-    <main className="min-h-screen bg-black text-white overflow-hidden relative">
+    <main className="min-h-screen bg-black text-white overflow-x-hidden relative">
     <CursorGlow />
     <SmoothScroll />
     <div
@@ -140,7 +140,7 @@ export default function Home() {
       </nav>
 {/* HERO */}
 
-<section className="relative min-h-screen overflow-hidden flex items-center px-10 md:px-20">
+<section className="relative min-h-screen overflow-x-hidden flex items-center px-6 md:px-20 pt-28 md:pt-0">
 
   {/* BACKGROUND GLOW */}
 
@@ -479,7 +479,7 @@ md:translate-x-10
                 Fashion Oriented
               </h3>
 
-              <div className="grid md:grid-cols-2 gap-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 items-center">
 
                 {/* CARD 3 */}
 
