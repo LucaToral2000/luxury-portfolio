@@ -1,5 +1,8 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link"; 
+import Link from "next/link";
 
 const projects = [
   "000","001","002","003","004","005","006","007","008","009",
@@ -209,6 +212,9 @@ const projectInfo: Record<
 };
 
 export default function ArchivePage() {
+
+  const [activeProject, setActiveProject] = useState<string | null>(null);
+
   return (
     <main className="min-h-screen bg-black text-white">
       <section className="max-w-[1600px] mx-auto px-6 md:px-10 pt-32 pb-32">
@@ -255,37 +261,41 @@ high jewelry.
 
           {projects.map((image) => (
 
-            <div
-              key={image}
-              className="
-                group
-                relative
-                mb-6
-                break-inside-avoid
-                overflow-hidden
-                rounded-2xl
-                bg-neutral-950
-                cursor-pointer
-              "
-            >
-
+<div
+key={image}
+onClick={() =>
+  setActiveProject(activeProject === image ? null : image)
+}
+className="
+  group
+  relative
+  mb-6
+  break-inside-avoid
+  overflow-hidden
+  rounded-2xl
+  bg-neutral-950
+  cursor-pointer
+"
+>
 <Image
   src={`/archive/${image}.jpg`}
   alt={`Project ${image}`}
   width={1400}
   height={1400}
   unoptimized
-  className="
+  className={`
     w-full
     h-auto
-
+  
     transition-all
     duration-700
     ease-[cubic-bezier(.22,.61,.36,1)]
-
+  
+    ${activeProject === image ? "scale-[1.04] brightness-110" : ""}
+  
     group-hover:scale-[1.04]
     group-hover:brightness-110
-  "
+  `}
 />
 
               {/* OVERLAY */}

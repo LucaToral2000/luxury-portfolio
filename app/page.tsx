@@ -31,8 +31,10 @@ import CursorGlow from "@/components/CursorGlow";
 import MagneticButton from "@/components/MagneticButton";
 import Reveal from "@/components/Reveal";
 import Parallax from "@/components/Parallax";
+import { useState } from "react";
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
   if (typeof document !== "undefined") {
 
     const style = document.createElement("style");
@@ -70,74 +72,115 @@ export default function Home() {
 
       <div className="w-[900px] h-[900px] bg-white/10 blur-[220px] rounded-full absolute top-[-500px] left-[-200px] animate-pulse" />
 
-      {/* NAVBAR */}
+{/* NAVBAR */}
 
-      <nav className="fixed top-0 left-0 w-full z-50 px-8 py-6 flex justify-between items-center backdrop-blur-md bg-black/20 border-b border-white/5">
+<nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/20 border-b border-white/5">
+
+  <div className="max-w-[1800px] mx-auto flex justify-between items-center px-6 md:px-8 py-5">
+
+    <a
+      href="#"
+      className="transition-all duration-500 hover:opacity-80"
+    >
+      <img
+        src="/images/logo.png"
+        alt="Luca Toral"
+        className="h-12 md:h-16 object-contain"
+      />
+    </a>
+
+    {/* Desktop */}
+
+    <div className="hidden md:flex gap-10 text-sm text-neutral-400">
 
       <a
-  href="#"
-  className="
-    text-lg
-    md:text-xl
-    tracking-[0.28em]
-    uppercase
-    text-neutral-300
-    hover:text-white
-    transition-all
-    duration-700
-    hover:scale-105
-  "
->
+        href="#works"
+        className="hover:text-white transition-all duration-500 hover:tracking-[0.2em]"
+      >
+        Works
+      </a>
 
-  <img
-    src="/images/logo.png"
-    alt="Luca Toral"
-    className="
-      h-16
-      md:h-18
-      object-contain
-      opacity-90
-      hover:opacity-100
-      transition
-      duration-700
-    "
-  />
+      <a
+        href="#services"
+        className="hover:text-white transition-all duration-500 hover:tracking-[0.2em]"
+      >
+        Services
+      </a>
 
-</a>
+      <a
+        href="#about"
+        className="hover:text-white transition-all duration-500 hover:tracking-[0.2em]"
+      >
+        About
+      </a>
 
-        <div className="flex gap-10 text-sm text-neutral-400">
+      <a
+        href="#contact"
+        className="hover:text-white transition-all duration-500 hover:tracking-[0.2em]"
+      >
+        Contact
+      </a>
 
-          <a
-            href="#works"
-            className="hover:text-white transition-all duration-500 hover:tracking-[0.2em]"
-          >
-            Works
-          </a>
+    </div>
 
-          <a
-            href="#services"
-            className="hover:text-white transition-all duration-500 hover:tracking-[0.2em]"
-          >
-            Services
-          </a>
+    {/* Mobile Button */}
 
-          <a
-            href="#about"
-            className="hover:text-white transition-all duration-500 hover:tracking-[0.2em]"
-          >
-            About
-          </a>
+    <button
+      onClick={() => setMenuOpen(!menuOpen)}
+      className="md:hidden text-white text-4xl leading-none"
+    >
+      {menuOpen ? "✕" : "☰"}
+    </button>
 
-          <a
-            href="#contact"
-            className="hover:text-white transition-all duration-500 hover:tracking-[0.2em]"
-          >
-            Contact
-          </a>
+  </div>
 
-        </div>
+  {/* Mobile Menu */}
 
-      </nav>
+  <div
+    className={`md:hidden overflow-hidden transition-all duration-500 ${
+      menuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
+    }`}
+  >
+
+    <div className="flex flex-col items-center gap-8 py-10 bg-black/95 backdrop-blur-xl border-t border-white/10">
+
+      <a
+        href="#works"
+        onClick={() => setMenuOpen(false)}
+        className="text-lg tracking-[0.25em] uppercase text-neutral-300 hover:text-white transition"
+      >
+        Works
+      </a>
+
+      <a
+        href="#services"
+        onClick={() => setMenuOpen(false)}
+        className="text-lg tracking-[0.25em] uppercase text-neutral-300 hover:text-white transition"
+      >
+        Services
+      </a>
+
+      <a
+        href="#about"
+        onClick={() => setMenuOpen(false)}
+        className="text-lg tracking-[0.25em] uppercase text-neutral-300 hover:text-white transition"
+      >
+        About
+      </a>
+
+      <a
+        href="#contact"
+        onClick={() => setMenuOpen(false)}
+        className="text-lg tracking-[0.25em] uppercase text-neutral-300 hover:text-white transition"
+      >
+        Contact
+      </a>
+
+    </div>
+
+  </div>
+
+</nav>
 {/* HERO */}
 
 <section className="relative min-h-screen overflow-x-hidden flex items-center px-6 md:px-20 pt-28 md:pt-0">
@@ -295,7 +338,7 @@ md:translate-x-10
                 {/* CARD 1 */}
 
                 <div className="group relative overflow-hidden rounded-[40px] border border-white/10">
-
+s
                   <img
                     src="/images/luxury-1-main.png"
                     alt=""
@@ -962,7 +1005,7 @@ animate-portraitFloat
 
 <div className="mt-16 pt-12 border-t border-white/10">
 
-  <div className="grid grid-cols-2 md:grid-cols-5 gap-y-16 gap-x-12 md:gap-x-20 items-center animate-brandsReveal">
+<div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-y-16 gap-x-10 md:gap-x-16 xl:gap-x-20 items-center animate-brandsReveal">
 
     {/* TWOJEYS */}
 
