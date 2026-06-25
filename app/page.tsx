@@ -140,7 +140,7 @@ export default function Home() {
       </nav>
 {/* HERO */}
 
-<section className="relative min-h-screen overflow-x-hidden flex items-center px-6 md:px-20 pt-28 md:pt-16">
+<section className="relative min-h-screen overflow-x-hidden flex items-center px-6 md:px-20 pt-28 md:pt-0">
 
   {/* BACKGROUND GLOW */}
 
@@ -479,7 +479,7 @@ md:translate-x-10
                 Fashion Oriented
               </h3>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 items-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8 items-center">
 
                 {/* CARD 3 */}
 
@@ -679,7 +679,44 @@ md:translate-x-10
 
         </Reveal>
       </FadeIn>
+      <Reveal>
+  <section className="relative z-10 px-10 md:px-20 py-40 border-t border-white/10">
 
+    <a
+      href="/archive"
+      className="group block max-w-5xl mx-auto text-center transition-all duration-500 hover:-translate-y-1"
+    >
+
+      <h2 className="text-[80px] md:text-[140px] font-extralight leading-none tracking-tight">
+        500+
+      </h2>
+
+      <h3 className="mt-6 text-2xl md:text-4xl font-light tracking-[0.35em] uppercase leading-tight">
+        Product
+        <br />
+        Developments
+      </h3>
+
+      <p className="mt-10 max-w-xl mx-auto text-neutral-500 leading-relaxed text-lg">
+        A curated archive of fashion jewelry, bespoke commissions and luxury product development.
+      </p>
+
+      <div className="mt-14 flex justify-center items-center gap-5 uppercase tracking-[0.35em] text-sm text-white">
+
+        <span className="h-px w-16 bg-white/30 transition-all duration-500 group-hover:w-24"></span>
+
+        Explore Archive
+
+        <span className="transition-transform duration-500 group-hover:translate-x-2">
+          →
+        </span>
+
+      </div>
+
+    </a>
+
+  </section>
+</Reveal>
       {/* SERVICES */}
 
       <FadeIn>
@@ -687,14 +724,14 @@ md:translate-x-10
 
         <section
           id="services"
-          className="relative z-10 px-10 md:px-20 py-0 border-t border-white/10"
+          className="relative z-10 px-10 md:px-20 pt-24 pb-0 border-t border-white/10"
         >
 
           <div className="max-w-[1400px] mx-auto">
 
             <div className="max-w-[900px] mb-28">
 
-              <p className="uppercase tracking-[0.4em] text-neutral-500 text-xs mb-6">
+              <p className="uppercase tracking-[0.45em] text-neutral-400 text-xs mb-8">
                 Services
               </p>
 
