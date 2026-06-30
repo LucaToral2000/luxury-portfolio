@@ -1001,205 +1001,10 @@ animate-portraitFloat
 
     </div>
 
-{/* BRANDS */}
-
-<div className="mt-16 pt-12 border-t border-white/10">
-
-<div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-y-16 gap-x-10 md:gap-x-16 xl:gap-x-20 items-center animate-brandsReveal">
-
-    {/* TWOJEYS */}
-
-    <a
-      href="https://www.twojeys.com"
-      target="_blank"
-      className="group relative flex items-center justify-center opacity-60 hover:opacity-100 transition duration-700 overflow-hidden"
-    >
-
-      <img
-        src="/images/2j.png"
-        alt="TwoJeys"
-        className="h-40 md:h-52 object-contain grayscale group-hover:grayscale-0 transition duration-700 relative z-10"
-      />
-
-      <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition duration-[1400ms] bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12" />
-
-    </a>
-
-    {/* DOR */}
-
-    <a
-      href="https://www.dorjoiers.com"
-      target="_blank"
-      className="group relative flex items-center justify-center opacity-60 hover:opacity-100 transition duration-700 overflow-hidden"
-    >
-
-      <img
-        src="/images/dor.png"
-        alt="D'Or Joiers"
-        className="h-32 md:h-40 object-contain grayscale group-hover:grayscale-0 transition duration-700 relative z-10"
-      />
-
-      <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition duration-[1400ms] bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12" />
-
-    </a>
-
-    {/* TIFFANY */}
-
-    <a
-      href="https://www.tiffany.com"
-      target="_blank"
-      className="group relative flex items-center justify-center opacity-60 hover:opacity-100 transition duration-700 overflow-hidden"
-    >
-
-      <img
-        src="/images/tiffany.png"
-        alt="Tiffany & Co."
-        className="h-32 md:h-40 object-contain grayscale group-hover:grayscale-0 transition duration-700 relative z-10"
-      />
-
-      <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition duration-[1400ms] bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12" />
-
-    </a>
-
-    {/* CAS DEIA */}
-
-    <a
-      href="https://casdeia.com"
-      target="_blank"
-      className="group relative flex items-center justify-center opacity-60 hover:opacity-100 transition duration-700 overflow-hidden"
-    >
-
-      <img
-        src="/images/casdeia.webp"
-        alt="Cas Deia"
-        className="h-32 md:h-40 object-contain grayscale group-hover:grayscale-0 transition duration-700 relative z-10"
-      />
-
-      <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition duration-[1400ms] bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12" />
-
-    </a>
-
-    {/* Cainte */}
-
-    <a
-      href="https://cainte.com"
-      target="_blank"
-      className="group relative flex items-center justify-center opacity-60 hover:opacity-100 transition duration-700 overflow-hidden"
-    >
-
-      <img
-        src="/images/cainte.png"
-        alt="Cainte"
-        className="h-32 md:h-40 object-contain grayscale group-hover:grayscale-0 transition duration-700 relative z-10"
-      />
-
-      <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition duration-[1400ms] bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12" />
-
-    </a>
-
-    {/* MISUI */}
-
-    <a
-      href="https://misui.es/"
-      target="_blank"
-      className="group relative flex items-center justify-center opacity-60 hover:opacity-100 transition duration-700 overflow-hidden"
-    >
-
-      <img
-        src="/images/misui.png"
-        alt="MISUI"
-        className="h-28 md:h-36 object-contain grayscale group-hover:grayscale-0 transition duration-700 relative z-10"
-      />
-
-      <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition duration-[1400ms] bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12" />
-
-    </a>
-
-    {/* tucco */}
-
-    <a
-      href="https://tuccojewelry.com/"
-      target="_blank"
-      className="group relative flex items-center justify-center opacity-60 hover:opacity-100 transition duration-700 overflow-hidden"
-    >
-
-      <img
-        src="/images/tucco.png"
-        alt="Tucco"
-        className="h-28 md:h-36 object-contain grayscale group-hover:grayscale-0 transition duration-700 relative z-10"
-      />
-
-      <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition duration-[1400ms] bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12" />
-
-    </a>
-
-    {/* SCUFFERS */}
-
-    <a
-      href="https://scuffers.com"
-      target="_blank"
-      className="group relative flex items-center justify-center opacity-60 hover:opacity-100 transition duration-700 overflow-hidden"
-    >
-
-      <img
-        src="/images/scuffers.png"
-        alt="Scuffers"
-        className="h-28 md:h-36 object-contain grayscale group-hover:grayscale-0 transition duration-700 relative z-10"
-      />
-
-      <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition duration-[1400ms] bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12" />
-
-    </a>
-
-    {/* COLD CULTURE */}
-
-    <a
-      href="https://coldcultureworldwide.com"
-      target="_blank"
-      className="group relative flex items-center justify-center opacity-60 hover:opacity-100 transition duration-700 overflow-hidden"
-    >
-
-      <img
-        src="/images/coldculture.png"
-        alt="Cold Culture"
-        className="h-28 md:h-36 object-contain grayscale group-hover:grayscale-0 transition duration-700 relative z-10"
-      />
-
-      <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition duration-[1400ms] bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12" />
-
-    </a>
-
-        {/* GOLD DEALERS */}
-
-        <a
-      href="https://thegolddealers.com/?srsltid=AfmBOooQpUEaOBzupC7-OwREtBRz16niu2nDtlq95HXkBgKyethex5Mq"
-      target="_blank"
-      className="group relative flex items-center justify-center opacity-60 hover:opacity-100 transition duration-700 overflow-hidden"
-    >
-
-      <img
-        src="/images/golddealers.jpg"
-        alt="GOLD DEALERS"
-        className="h-28 md:h-36 object-contain grayscale group-hover:grayscale-0 transition duration-700 relative z-10"
-      />
-
-      <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition duration-[1400ms] bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12" />
-
-    </a>
-
-    {/* EXTRA SLOT */}
-
-    <div className="hidden md:block" />
-
-    </div>
-
- </div>
-
- </div>
-
- </section>
- </Reveal>
- </FadeIn>
+  </div>
+    </section>
+</Reveal>
+</FadeIn>
 
 {/* CONTACT */}
 
@@ -1220,8 +1025,7 @@ animate-portraitFloat
               </p>
 
               <h2 className="text-5xl md:text-7xl font-extralight leading-[1] max-w-3xl">
-                Let’s build
-                something meaningful.
+              Every exceptional design begins with an exceptional concept.
               </h2>
 
             </div>
@@ -1261,7 +1065,7 @@ animate-portraitFloat
   />
 
   <span>
-    lucatoral2016@gmail.com
+    lucatoraldesign@gmail.com
   </span>
 
 </a>
@@ -1278,12 +1082,11 @@ animate-portraitFloat
                 </p>
 
                 <a
-                  href="https://www.instagram.com/ltoral925/"
+                  href="https://www.upwork.com/freelancers/~01f4086dd29775cc64"
                   target="_blank"
                   className="text-2xl md:text-4xl font-extralight hover:text-neutral-400 transition duration-500"
                 >
-                  @ltoral925
-
+                  Upwork
                 </a>
 
               </div>
